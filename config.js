@@ -14,16 +14,21 @@ config = {
         url: 'https://whispering-depths-9307.herokuapp.com/',
         mail: 'hello@colemanrollins.io',
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+              host: 'ec2-54-83-52-71.compute-1.amazonaws.com',
+              username: 'gktanzgtaypuez',
+              password: 'ZEDRW-wi9BZlL3VR9IAl1Uo8YM',
+              port: '5432'
+              database 'd81v6pam2uaa3e',
+              filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false
         },
 
         server: {
             host: '0.0.0.0',
-            port: '5000'
+            port: 'process.env.PORT'
         }
     },
 
