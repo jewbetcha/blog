@@ -19,8 +19,8 @@ config = {
               host: 'ec2-54-83-52-71.compute-1.amazonaws.com',
               username: 'gktanzgtaypuez',
               password: 'ZEDRW-wi9BZlL3VR9IAl1Uo8YM',
-              port: '5432'
               database: 'd81v6pam2uaa3e',
+              port: '5432',
               filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false
