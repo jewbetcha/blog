@@ -17,7 +17,7 @@ config = {
             client: 'postgres',
             connection: {
               host: 'ec2-54-83-52-71.compute-1.amazonaws.com',
-              username: 'gktanzgtaypuez',
+              user: 'gktanzgtaypuez',
               password: 'ZEDRW-wi9BZlL3VR9IAl1Uo8YM',
               database: 'd81v6pam2uaa3e',
               port: '5432',
