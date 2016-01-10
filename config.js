@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: 'https://whispering-depths-9307.herokuapp.com/',
         mail: 'hello@colemanrollins.io',
         database: {
             client: 'sqlite3',
