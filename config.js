@@ -12,7 +12,7 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://my-ghost-blog.com',
-        mail: {'hello@colemanrollins.io'},
+        mail: 'hello@colemanrollins.io',
         database: {
             client: 'sqlite3',
             connection: {
