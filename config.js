@@ -11,24 +11,23 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'https://whispering-depths-9307.herokuapp.com/',
+        url: 'https://technostic.herokuapp.com/',
         mail: 'hello@colemanrollins.io',
         database: {
-            client: 'postgres',
+          client: 'postgres',
             connection: {
-              host: 'ec2-54-83-52-71.compute-1.amazonaws.com',
-              user: 'gktanzgtaypuez',
-              password: 'ZEDRW-wi9BZlL3VR9IAl1Uo8YM',
-              database: 'd81v6pam2uaa3e',
-              port: '5432',
-              filename: path.join(__dirname, '/content/data/ghost.db')
+              host: process.env.POSTGRES_HOST,
+              user: process.env.POSTGRES_USER,
+              password: process.env.POSTGRES_PASSWORD,
+              database: process.env.POSTGRES_DATABASE,
+              port: '5432'
             },
             debug: false
         },
 
         server: {
             host: '0.0.0.0',
-            port: '3000'
+            port: 'process.env.PORT'
         }
     },
 
