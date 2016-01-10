@@ -20,7 +20,7 @@ config = {
               username: 'gktanzgtaypuez',
               password: 'ZEDRW-wi9BZlL3VR9IAl1Uo8YM',
               port: '5432'
-              database 'd81v6pam2uaa3e',
+              database: 'd81v6pam2uaa3e',
               filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false
