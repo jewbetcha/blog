@@ -19,7 +19,7 @@
   "main": "./core/index",
   "scripts": {
     "preinstall": "npm install semver && node -e \"require('./core/server/utils/startup-check.js').nodeVersion()\"",
-    
+    "start": "node index.js",
     "test": "grunt validate --verbose"
   },
   "engines": {
