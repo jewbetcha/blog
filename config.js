@@ -96,6 +96,16 @@ config = {
         logging: false
     },
 
+    storage: {
+        active: 'ghost-s3',
+        'ghost-s3': {
+            accessKeyId: 'AKIAI4FPRFDEDPENKFQA',
+            secretAccessKey: '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', 
+            bucket: 'themezzilla-blog', 
+            region: 'US Standard', 
+            assetHost: 'https://themezzilla-blog.s3.amazonaws.com/' 
+        }
+    },
     // ### Testing MySQL
     // Used by Travis - Automated testing run through GitHub
     'testing-mysql': {
